@@ -20,7 +20,7 @@ const Hero = () => {
             <span className='orange_gradient'>OpenAI GPT-4</span>
         </h1>
         <h2 className='desc'>
-            Running short on time? Need that article summarized for your next assignment? We introduce to you: QuickByte! An open-source article summarizer that transforms those long articles into quick, digestable synopses.
+            Running short on time? Need that article summarized for your next assignment? We introduce to you: Summize! An open-source article summarizer that transforms those long articles into quick, digestable synopses.
         </h2>
     </header>
   )
