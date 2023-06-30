@@ -1,6 +1,7 @@
 # AI Summarizer
 
 An article summarizer tool using OpenAI's GPT model.
+[View Deployed Site Here](https://flourishing-buttercream-e3a88c.netlify.app/)
 
 ## Description
 
