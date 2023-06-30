@@ -77,13 +77,43 @@ const Demo = () => {
               onClick={() => setArticle(item)}
               className='link_card'
             >
-
+              <div className='copy_btn'>
+                <img 
+                  src={copy}
+                  alt='copy_icon'
+                  className='w-[40%] h-[40%] object-contain'
+                />
+              </div>
+              <p className='flex-1 font-satoshi text-blue-700 font-medium text-sm truncate'>
+                {item.url}
+              </p>
             </div>
           ))}
         </div>
       </div>
 
       {/* Display Results */}
+      <div className='my-10 max-w-full flex justify-center items-center'>
+          {isFetching ? (
+            <img src={loader} alt="loader" className='w-10 h-20 object-contain'/>
+          ) : error ? (
+            <p className='font-inter font-bold text-black text-center'>
+              Oh no! That wasn't supposed to happen...
+              <br />
+              <span className='font-satoshi font-normal text-gray-700'>
+                {error?.data?.error}
+              </span>
+            </p>
+          ) : (
+            article.summary && (
+              <div className='flex flex-col gap-3'>
+                <h2 className='font-satoshi font-bold text-gray-600 text-xl'>
+                  Article <span className='blue_gradient'>Summary</span>
+                </h2>
+              </div>
+            )
+          )}
+      </div>
     </section>
   )
 }
