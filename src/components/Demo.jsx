@@ -38,13 +38,13 @@ const Demo = () => {
 
       localStorage.setItem('articles', JSON.stringify(updatedAllArticles))
     }
-  }
+  };
 
-  const handleCopy = {copyURL} => {
+  const handleCopy = (copyURL) => {
     setCopied(copyURL);
     navigator.clipboard.writeText(copyURL);
     setTimeout(() => setCopied(false), 3000);
-  }
+  };
 
   return (
     <section className='mt-16 w-full max-w-xl'>
@@ -127,7 +127,7 @@ const Demo = () => {
           )}
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Demo
