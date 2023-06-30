@@ -11,7 +11,7 @@ const Hero = () => {
             onClick={() => window.open("https://github.com/ayaneyokoya/ai-summarizer")}
             className='black_btn'
             >
-                Gitub
+                GitHub
             </button>
         </nav>
 
